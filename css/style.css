@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: lightblue;
+  color: inherit;
+}
+.container{
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+/* BOTTONI */
+.btn{
+  width: 200px;
+  height: 50px;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px;
+  background-color: yellow;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin: 10px;
+}
+.btn:hover{
+  background-color: red;
+  color: yellow;
+  cursor: pointer;
+}
+.box{
+  height: 120px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  display: inline-block;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 20px;
+}
