@@ -5,6 +5,9 @@ var bottone = document.getElementById("genera");
 
 bottone.addEventListener("click",
   function(){
+    document.getElementById("youser").innerHTML = "";
+    document.getElementById("pc").innerHTML = "";
+
     // INSERIMENTO NUMERO UTENTE
     var numYouser = Math.floor(Math.random() * 6) + 1 ;
     document.getElementById("youser").innerHTML = numYouser;
@@ -14,16 +17,17 @@ bottone.addEventListener("click",
     var numRandom = Math.floor(Math.random() * 6) + 1 ;
     document.getElementById("pc").innerHTML = numRandom;
     console.log("Random " + numRandom);
-    }
-);
 
-// CONFRONTO DEI DUE NUMERI
-if (numYouser < numRandom) {
-  // STAMPA DELLA SCRITTA DEL VINCITORE
-  document.getElementById("risultato").innerHTML = "Il PC ha Vinto !"
-}else if (numYouser > numRandom) {
-  // STAMPA DELLA SCRITTA DEL VINCITORE
-  document.getElementById("risultato").innerHTML = "Hai Vinto !"
-}else (numYouser == numRandom)
-  // STAMPA DELLA SCRITTA DEL VINCITORE
-  document.getElementById("risultato").innerHTML = "Pareggio !"
+    // CONFRONTO DEI DUE NUMERI
+    if (numYouser < numRandom) {
+      document.getElementById("risultato").innerHTML = "Il PC ha Vinto !";
+    }
+    else if (numYouser > numRandom) {
+      document.getElementById("risultato").innerHTML = "Hai Vinto !";
+    }
+    else {
+      document.getElementById("risultato").innerHTML = "Pareggio !";
+    }
+
+  }
+);
